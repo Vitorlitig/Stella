@@ -14,7 +14,7 @@
 
 **Project Stella** is a highly experimental Proof of Concept (PoC) for a fundamentally new paradigm in software execution. Instead of executing discrete, sequential instructions moving through a traditional von Neumann memory space, Stella compiles standard assembly logic into a massive, multi-dimensional **neural matrix**.
 
-During runtime, the execution state (variables, instruction pointers, and logic branches) exists purely as "activation energy" bouncing around an unhinged linear algebra system. To an outside observer dumping the VM's memory, the program looks like a chaotic mess of floating-point noise.
+During runtime, the execution state (variables, instruction pointers, and logic branches) exists purely as "activation energy" bouncing around an unhinged linear algebra system. To an outside observer dumping the VM's memory, the program looks like a chaotic mess of floating-point noise. Conceptually, Stella acts as a "Neural Fully Homomorphic Encryption (FHE)" environment, enabling the host processor to perform deterministic logic without ever comprehending the semantics, spatial layout, or sequential flow of the code it is running.
 
 ## Core Capabilities
 
@@ -35,6 +35,10 @@ To prevent the "Vanishing Gradient" problem common in recurrent neural systems, 
 ### 🔐 Spatial Obfuscation (Polymorphism)
 
 Every compiled program is pad-injected with "junk nodes" and cryptographically shuffled using an $N \times N$ Permutation Matrix. No two compiled binaries look alike, and the logical data inside the VM registers is geometrically scrambled, defeating memory scanners and traditional reverse engineering.
+
+### 🌪️ Chaotic Side-Channel Defense
+
+The "junk nodes" are not simply zeroed out; they are woven into **Irrational Rotational Matrices** that force the CPU to compute non-repeating orbital trajectories bounded by the activation function. This boils the runtime state in active entropy, blinding Differential Power Analysis (DPA) and electromagnetic side-channel attacks.
 
 ---
 
@@ -58,6 +62,12 @@ When you compile a `.asm` script, the `compile_demo` assembler generates the tru
 $$W_{obfuscated} = P^{-1} \times W_{clean} \times P$$
 
 This spatial transformation is mathematically isomorphic—the continuous logic executes perfectly inside the encrypted basis, and is only decoded back to physical reality by the legitimate client holding the private `.key` file.
+
+To generate this permutation matrix, the compiler initializes a **Hénon Map Strange Attractor** seeded by nanosecond system time, extracting cryptographic entropy from a non-linear chaotic orbit.
+
+### Execution Semantics: Hardware over Software
+
+Because Stella evaluates all rows simultaneously, it fundamentally behaves like a **Field Programmable Gate Array (FPGA)** rather than a sequential CPU. Signals experience physical *propagation delay* (e.g., a `NOT` gate takes exactly one matrix multiplication cycle to invert its output). As a result, developers must account for real-world electrical race conditions by using "Buffer Nodes" to hold execution energy while logic gates settle.
 
 ---
 
@@ -159,7 +169,7 @@ cargo run --bin stella_dis source.asm app.stella
 
 ```
 
-To defend against this, the production compiler pads the `.SIZE` to $16+$ nodes. A 16-node state vector yields **$16! = 20,922,789,888,000$ possible permutations**, making algebraic brute-forcing computationally unfeasible for average attackers.
+To defend against this, the production compiler pads the `.SIZE` to $16+$ nodes. A 16-node state vector yields **$16! = 20,922,789,888,000$ possible permutations**, making algebraic brute-forcing computationally unfeasible for average attackers. The addition of active rotational entropy within these padded nodes further obscures the operational payload from side-channel observers.
 
 ---
 
@@ -167,9 +177,8 @@ To defend against this, the production compiler pads the `.SIZE` to $16+$ nodes.
 
 > [!WARNING]
 > **Experimental PoC Status:** Project Stella is a research endeavor into continuous-state execution and neural obfuscation. It is strictly an alpha-stage Proof of Concept.
-> * **Not for Production:** The assembler does not currently implement syntax checking, and the linear constraints mean multi-layer programs require manual "Energy Register" management to prevent matrix row collisions.
+> * **Not for Production:** The assembler does not currently implement syntax checking, and the linear constraints mean multi-layer programs require manual "Energy Register" management to prevent matrix row collisions. Furthermore, code must be engineered with hardware-like propagation delays in mind to prevent race conditions.
 > * **Performance:** Simulating sequential logic via $O(N^2)$ matrix multiplications is inherently slower than standard native execution.
-> * **Future Roadmap:** Expanding to a Brainfuck-to-Stella matrix compiler to fully demonstrate arbitrary Turing-complete execution.
 > 
 > 
 
